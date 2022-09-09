@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/soanotice/static/css/main.706ff85a.css",
+    "main.js": "/soanotice/static/js/main.de9b7b9a.js",
+    "index.html": "/soanotice/index.html",
+    "main.706ff85a.css.map": "/soanotice/static/css/main.706ff85a.css.map",
+    "main.de9b7b9a.js.map": "/soanotice/static/js/main.de9b7b9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.706ff85a.css",
+    "static/js/main.de9b7b9a.js"
+  ]
+}
