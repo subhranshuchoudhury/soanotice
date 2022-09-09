@@ -1,38 +1,118 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&family=Oswald&family=Rubik:wght@500&display=swap');
+
+
+.title-text {
+  font-family: 'Oswald',
+    sans-serif;
+  background-color: #efef;
+  border-radius: 23px;
+}
+
+.eventCard {
+  padding-top: 10px;
   text-align: center;
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 23px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border: 4px double skyblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outOfDate {
+  text-decoration: line-through;
+  color: grey;
+  cursor: not-allowed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.eventCard:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  border: 4px solid purple;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.eventTitle {
+  font-size: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: 'Oswald',
+    sans-serif;
+}
+
+.eventDate {
+  background-color: purple;
   color: white;
+  padding: 5px;
+  font-size: 20px;
+  max-width: 100%;
+  margin: 15px auto;
+  text-align: center;
+  font-family: 'Rubik',
+    sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.eventPlace {
+  font-weight: bold;
+  font-size: larger;
+  background-color: aqua;
+  display: table;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eventDescription {
+  display: block;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans',
+    sans-serif;
+}
+
+.eventFooter div {
+  display: inline-block;
+  font-family: 'Rubik',
+    sans-serif;
+  margin: 10px;
+  min-width: 25%;
+  padding: 10px;
+  border-radius: 23px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+/* Google font icons */
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
 }

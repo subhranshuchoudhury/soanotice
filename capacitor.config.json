@@ -1,0 +1,8 @@
+{
+    "appId": "com.subhranshu.soacsenotice",
+    "appName": "SOA CSE Notice",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {}
+}

@@ -1,0 +1,7 @@
+{
+    "name": "SOA CSE Notice",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "react"
+}
