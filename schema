@@ -1,0 +1,57 @@
+const Schema = {
+    "type": "array",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+        "type": "object",
+        "required": [
+            "event",
+            "s_date",
+            "l_date",
+            "place",
+            "section",
+            "description",
+            "link"
+        ],
+        "properties": {
+            "event": {
+                "type": "string"
+            },
+            "s_date": {
+                "type": "string"
+            },
+            "l_date": {
+                "type": "string"
+            },
+            "place": {
+                "type": "string"
+            },
+            "section": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "link": {
+                "type": "string"
+            },
+            "important": {
+                "type": "boolean"
+            },
+            "notice": {
+                "type": "string"
+            },
+            "message": {
+                "type": "string"
+            },
+            "ver": {
+                "type": "integer"
+            },
+            "download_l": {
+                "type": "string"
+            }
+        }
+    }
+}
+
+// This is the schema of the database table.

@@ -31,7 +31,6 @@
 
 .eventTitle {
   font-size: 30px;
-  padding-left: 20px;
   font-weight: bold;
   font-family: 'Oswald',
     sans-serif;
@@ -63,7 +62,6 @@
   display: block;
   text-align: left;
   padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 20px;
   font-family: 'Open Sans',
     sans-serif;

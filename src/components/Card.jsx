@@ -35,7 +35,7 @@ const Card = (props) => {
                         <div className="accordion-body">{props.data.description}</div>
                         <div className='eventLink eventDescription'><span className="material-icons">
                             link
-                        </span>Link: {props.data.link === "" ? "No Link Available!" : <a href={props.data.link}>Click here!</a>}</div>
+                        </span>Link: {props.data.link === "" ? "Not Available 😢" : <a href={props.data.link}>Click here!</a>}</div>
                     </div>
                 </div>
             </div>
@@ -50,10 +50,10 @@ const Card = (props) => {
                 </span>{props.data.important ? "Important" : "Not important"}</div>
                 <div className='eventTotalDuration' style={{ backgroundColor: "orange", color: "black" }}><span className="material-icons">
                     timer
-                </span>DURATION: {dayCalculate(props.data.l_date) - dayCalculate(props.data.s_date) + 1} Days</div>
+                </span>Total: {dayCalculate(props.data.l_date) - dayCalculate(props.data.s_date) + 1} Days</div>
                 <div className='eventSection' style={{ backgroundColor: "lightpink", color: "black" }}><span className="material-icons">
                     door_front
-                </span>SEC: {props.data.section}</div>
+                </span>{props.data.section}</div>
             </div>
         </div>
     );

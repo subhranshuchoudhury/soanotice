@@ -4,6 +4,12 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 function App() {
+
+  // update these:
+  const DEVELOPE_VERSION = 2;
+
+
+  // no need to update
   const [Notices, setNotices] = useState([]);
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +42,7 @@ function App() {
   }, []);
   return (
     <div className="App" style={isDarkMode ? null : { backgroundColor: "black", color: "white" }}>
-      <NavBar data={Notices} toggleMode={toggleDarkMode} currentMode={isDarkMode} />
+      <NavBar data={Notices} toggleMode={toggleDarkMode} currentMode={isDarkMode} developeVersion={DEVELOPE_VERSION} />
       <br></br><br></br><br></br>
 
       {
