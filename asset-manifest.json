@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/soanotice/static/css/main.479f9572.css",
-    "main.js": "/soanotice/static/js/main.e67ad4f4.js",
+    "main.js": "/soanotice/static/js/main.b4f4e467.js",
     "index.html": "/soanotice/index.html",
     "main.479f9572.css.map": "/soanotice/static/css/main.479f9572.css.map",
-    "main.e67ad4f4.js.map": "/soanotice/static/js/main.e67ad4f4.js.map"
+    "main.b4f4e467.js.map": "/soanotice/static/js/main.b4f4e467.js.map"
   },
   "entrypoints": [
     "static/css/main.479f9572.css",
-    "static/js/main.e67ad4f4.js"
+    "static/js/main.b4f4e467.js"
   ]
 }
