@@ -35,7 +35,7 @@ const Card = (props) => {
                         <div className="accordion-body">{props.data.description}</div>
                         <div className='eventLink eventDescription'><span className="material-icons">
                             link
-                        </span>Link: {props.data.link === "" ? "Not Available 😢" : <a href={props.data.link}>Click here!</a>}</div>
+                        </span>Link: {props.data.link === "" ? "Not Available ❎" : <a href={props.data.link}>Click here!</a>}</div>
                     </div>
                 </div>
             </div>

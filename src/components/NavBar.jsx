@@ -33,7 +33,7 @@ const NavBar = (props) => {
                                 props.data.length !== 0 && props.data[0].ver > props.developeVersion ? <li className="nav-item">
                                     <a className="nav-link" href={props.data[0].download_l}><span className="material-icons">
                                         file_download
-                                    </span><b style={{ cursor: "pointer", color: "black", backgroundColor: "red" }}>Download Latest App ⚠️</b></a></li> : <b style={{ cursor: "pointer", color: "black" }}>✅ NO UPDATES</b>
+                                    </span><b style={{ cursor: "pointer", color: "black", backgroundColor: "red" }}>Download Latest APK ⚠️</b></a></li> : <b style={{ cursor: "pointer", color: "black" }}>✅ NO UPDATES</b>
 
                             }
                             <li className="nav-item dropdown">

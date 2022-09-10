@@ -7,7 +7,8 @@ function App() {
 
   // update these:
   const DEVELOPE_VERSION = 2;
-
+  // const API_URL = 'https://raw.githubusercontent.com/subhranshuchoudhury/soanotice/main/NoticesDB.json';
+  const API_URL = 'https://api.npoint.io/ed674700a8f2b7fb9da4';
 
   // no need to update
   const [Notices, setNotices] = useState([]);
@@ -17,7 +18,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      await fetch('https://api.npoint.io/ed674700a8f2b7fb9da4')
+      await fetch(API_URL)
         .then(response => response.json())
         .then(data => {
           setNotices(data);
