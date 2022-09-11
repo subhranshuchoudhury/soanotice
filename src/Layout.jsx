@@ -1,10 +1,10 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";
-const Layout = () => {
+const Layout = (props) => {
     return (
         <>
 
-            <NavBar />
+            <NavBar info={props.info} />
             <div className="spacerOutlet"></div>
             <Outlet />
         </>

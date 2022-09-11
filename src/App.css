@@ -89,3 +89,46 @@ body {
   margin: 5px auto;
   border-radius: 23px;
 }
+
+.homeNavigation {
+  margin: 40px auto 30px;
+  text-align: center;
+}
+
+.navigateLink {
+  color: white;
+  border-radius: 23px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navigateLink:hover {
+  background-color: #E94560;
+  border-radius: 23px;
+  color: #25316D;
+}
+
+.loadingSpinner {
+  height: 50px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer i,
+a {
+  color: #25316D;
+}
+
+.apkDownloadBtn {
+  margin-top: 40px;
+  width: 120px;
+  border: 2px solid white;
+}
+
+.apkDownloadBtn:hover {
+  border: 2px solid #E94560;
+}
