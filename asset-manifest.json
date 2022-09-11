@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/soanotice/static/css/main.65bfea12.css",
+    "main.css": "/soanotice/static/css/main.a6c68beb.css",
     "main.js": "/soanotice/static/js/main.2fbf9098.js",
     "index.html": "/soanotice/index.html",
-    "main.65bfea12.css.map": "/soanotice/static/css/main.65bfea12.css.map",
+    "main.a6c68beb.css.map": "/soanotice/static/css/main.a6c68beb.css.map",
     "main.2fbf9098.js.map": "/soanotice/static/js/main.2fbf9098.js.map"
   },
   "entrypoints": [
-    "static/css/main.65bfea12.css",
+    "static/css/main.a6c68beb.css",
     "static/js/main.2fbf9098.js"
   ]
 }
