@@ -20,13 +20,13 @@ const NavBar = (props) => {
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
                             </li>
-                            <li className="nav-item">
+                            <li data-bs-dismiss="offcanvas" className="nav-item">
                                 <Link className='navigateLink' to="/soanotice/">GENERAL NOTIFICATION</Link>
                             </li>
-                            <li className="nav-item">
+                            <li data-bs-dismiss="offcanvas" className="nav-item">
                                 <Link className='navigateLink' to="/soanotice/student-notice">STUDENT NOTICE</Link>
                             </li>
-                            <li className="nav-item">
+                            <li data-bs-dismiss="offcanvas" className="nav-item">
                                 <Link className='navigateLink' to="/soanotice/exam-notice">EXAM NOTICE</Link>
                             </li>
                             {

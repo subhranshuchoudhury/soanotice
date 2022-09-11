@@ -4,6 +4,7 @@ import Card from './components/Card';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from 'react';
+import NavBar from './components/NavBar';
 function App() {
   const [Version, setVersion] = useState([]);
   const checkVersion = async () => {
@@ -20,6 +21,7 @@ function App() {
     checkVersion();
   }, []);
   return <>
+
 
     <BrowserRouter>
       <Routes>
