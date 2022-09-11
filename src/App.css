@@ -1,116 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&family=Oswald&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
 
-
-.title-text {
-  font-family: 'Oswald',
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Anton',
     sans-serif;
-  background-color: #efef;
-  border-radius: 23px;
 }
 
-.eventCard {
-  padding-top: 10px;
-  text-align: center;
-  width: 80%;
+body {
+  background-color: #16213E;
+}
+
+.notificationCard {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #25316D;
   margin: 40px auto;
+  width: 50%;
   border-radius: 23px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border: 4px double skyblue;
+  padding: 20px;
 }
 
-.outOfDate {
-  text-decoration: line-through;
-  color: grey;
-  cursor: not-allowed;
-}
-
-.eventCard:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-  border: 4px solid purple;
+.eventIndex {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 20px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: table;
+  background-color: #533483;
+  padding: 10px;
 }
 
 .eventTitle {
-  font-size: 30px;
-  font-weight: bold;
+  color: whitesmoke;
   font-family: 'Oswald',
     sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 100px;
+  padding: 10px 10px 0px;
+  margin: 20px 20px 0px 20px;
+  background-color: #E94560;
+  border-radius: 15px 10px 0px 0px;
+  border-bottom: 5px double white;
 }
 
 .eventDate {
-  background-color: purple;
-  color: white;
-  padding: 5px;
-  font-size: 20px;
-  max-width: 100%;
-  margin: 15px auto;
   text-align: center;
-  font-family: 'Rubik',
-    sans-serif;
+  background-color: #16213E;
+  padding: 8px;
+  margin: 20px 20px 0px 20px;
+  border-radius: 23px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.eventPlace {
-  font-weight: bold;
-  font-size: larger;
-  background-color: aqua;
+
+.eventLink {
+  text-align: center;
+  margin: 30px auto 10px;
+  font-size: 15px;
+  background-color: #16213E;
+  display: table;
+  padding: 5px;
+  border-radius: 23px;
+  font-family: 'Oswald',
+    sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.eventLink a {
+  text-decoration: none;
+  border-radius: 23px;
+  color: white;
+}
+
+.eventLink:hover {
+  background-color: #E94560;
+}
+
+.spacerOutlet {
+  height: 100px;
+}
+
+.notificationCategory {
+  text-align: center;
+  background-color: #25316D;
+  padding: 12px;
   display: table;
   margin: 5px auto;
-  padding: 5px;
   border-radius: 23px;
-}
-
-.eventDescription {
-  display: block;
-  text-align: left;
-  padding-left: 20px;
-  margin-bottom: 20px;
-  font-family: 'Open Sans',
-    sans-serif;
-}
-
-.eventFooter div {
-  display: inline-block;
-  font-family: 'Rubik',
-    sans-serif;
-  margin: 10px;
-  min-width: 25%;
-  padding: 10px;
-  border-radius: 23px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-
-
-/* Google font icons */
-
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-24 {
-  font-size: 24px;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
-}
-
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light {
-  color: rgba(255, 255, 255, 1);
-}
-
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3);
 }

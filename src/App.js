@@ -1,77 +1,44 @@
-import { useState, useEffect } from 'react';
-import './App.css';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Layout from './Layout';
+import Home from './pages/Home';
 import Card from './components/Card';
-import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+  const [Notifications, setNotifications] = useState([]);
+  const [ApiLink, setApiLink] = useState('gn');
+  const setLink = (param) => {
+    alert("set link active")
+    setApiLink(param);
+  }
+  const loadNotifications = async () => {
 
-  // update these:
-  const DEVELOPE_VERSION = 2;
-  // const API_URL = 'https://raw.githubusercontent.com/subhranshuchoudhury/soanotice/main/NoticesDB.json';
-  const API_URL = 'https://api.npoint.io/ed674700a8f2b7fb9da4';
-
-  // no need to update
-  const [Notices, setNotices] = useState([]);
-  const [isError, setIsError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(new Date().getHours() < 17);
-
-  const fetchData = async () => {
     try {
-      await fetch(API_URL)
-        .then(response => response.json())
-        .then(data => {
-          setNotices(data);
-          setIsLoading(false);
-        })
-
-
+      const { data } = await axios.get(`https://soanoticeserver.herokuapp.com/${ApiLink}`);
+      setNotifications(data);
     } catch (error) {
       console.log(error);
-      setIsError(true);
     }
   }
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    return isDarkMode;
-  }
-
-
   useEffect(() => {
-    fetchData();
+    loadNotifications();
   }, []);
-  return (
-    <div className="App" style={isDarkMode ? null : { backgroundColor: "black", color: "white" }}>
-      <NavBar data={Notices} toggleMode={toggleDarkMode} currentMode={isDarkMode} developeVersion={DEVELOPE_VERSION} />
-      <br></br><br></br><br></br>
+  return <>
 
-      {
-        isLoading ? <div className="d-flex align-items-center">
-          <strong>Loading...</strong>
-          <div className="spinner-border text-warning ms-auto" role="status" aria-hidden="true"></div>
-        </div> : null
-      }
-      {
-        isError ? <div className="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>⚠️Error! </strong> check internet connection or reopen/refresh the app.
-          <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div> : null
-      }
-
-      {
-        Notices.map((d, index) => {
-          return <Card data={d} index={index} />
-        })
-      }
-      <br></br><br></br><br></br><br></br>
-      {
-        Notices.length === 0 ? null : <Footer data={Notices} />
-      }
+    <BrowserRouter>
+      <Routes>
+        <Route path="/soanotice" element={<Layout />}>
+          <Route index element={<Card APIPARAM={"gn"} />} />
+          <Route path="exam-notice" element={<Card APIPARAM={"en"} />} />
+          <Route path="student-notice" element={<Card APIPARAM={"sn"} />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
 
-    </div>
-  );
+  </>
 }
 
 export default App;
