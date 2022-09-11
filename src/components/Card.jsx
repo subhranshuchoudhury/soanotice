@@ -37,9 +37,9 @@ const Card = (props) => {
 
         <h2 className='notificationCategory'>{Title}</h2>
         <div className='homeNavigation'>
-            <Link style={props.APIPARAM === "gn" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/">GENERAL NOTIFICATION</Link>
-            <Link style={props.APIPARAM === "sn" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/student-notice">STUDENT NOTICE</Link>
-            <Link style={props.APIPARAM === "en" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/exam-notice">EXAM NOTICE</Link>
+            <button><Link style={props.APIPARAM === "gn" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/">GENERAL NOTIFICATION</Link></button>
+            <button><Link style={props.APIPARAM === "sn" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/student-notice">STUDENT NOTICE</Link></button>
+            <button><Link style={props.APIPARAM === "en" ? { backgroundColor: "#E94560" } : null} className='navigateLink' to="/soanotice/exam-notice">EXAM NOTICE</Link></button>
         </div>
 
         {
